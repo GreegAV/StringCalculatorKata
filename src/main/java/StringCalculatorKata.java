@@ -20,10 +20,10 @@ public class StringCalculatorKata {
             }
             result += Integer.parseInt(number);
         }
-        if (negatives.isEmpty()){
+        if (negatives.isEmpty()) {
             return result;
         }
-        String message = "Negatives: "+String.join(" ",negatives);
+        String message = "Negatives: " + String.join(" ", negatives);
         throw new NegativeNumberException(message);
     }
 
